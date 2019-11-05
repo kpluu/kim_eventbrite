@@ -1,0 +1,37 @@
+<html>
+  <body>
+    <!-- ... -->
+
+(start_date: params[:start_date], duration: params[:duration], title: params[:title], description: params[:description], price: params[:price], location: params[:location])
+      
+    <%= form_tag url_for(action: 'create'), method: "post" do %>
+
+        <%= label_tag 'Date' %>
+        <%= text_field_tag 'date', @event.date %>
+        <br /> <br />
+
+        <%= label_tag 'Duration' %>
+        <%= text_field_tag 'duration', @event.duration %>
+        <br /> <br />
+
+        <%= label_tag 'Title' %>
+        <%= text_area_tag 'title', @event.title %>
+        <br /> <br />
+
+        <%= label_tag 'Description' %>
+        <%= text_field_tag 'description', @event.descritption %>
+        <br /> <br />
+
+        <%= label_tag 'Price' %>
+        <%= text_field_tag 'price', @event.price %>
+        <br /> <br />
+
+        <%= label_tag 'Location' %>
+        <%= text_field_tag 'location', @event.location %>
+        <br /> <br />
+
+      <%= submit_tag "Create Event" %>
+
+    <% end %>
+  </body>
+</html>
