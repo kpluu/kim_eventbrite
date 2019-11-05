@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="card text-center mb-5 mt-5">
+    <h5 class="card-header">User Number <%= @user.id %></h5>
+    <div class="card-body">
+      <h3 class="card-title mb-5">First Name : <%= @user.first_name %></h3>
+      <h3 class="card-title mb-5">Name : <%= @user.last_name %></h3>    
+      <h3 class="card-text mb-5">Description : <%= @user.description %></h3>
+      <h3 class="card-text mb-5">Email : <%= @user.email %></h3>
+    </div>
+  </div>  
+  <h1>My events</h1>
+  <p>Add list of user's event</p>
+  <p><%= link_to "Edit email / password", edit_user_registration_path, :class => "btn btn-primary" %></p>
+  <p><%= link_to "Edit profile", edit_user_path(@user.id), :class => "btn btn-success" %></p>
+</div>
