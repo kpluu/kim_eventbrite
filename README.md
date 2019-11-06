@@ -1,7 +1,7 @@
 # README
 
 # EVENTBRITE PROJECT
-Ne rate plus d'événement THP grâce au site Eventbrite de THP !
+Ne rate plus d'événement THP avec le site Eventbrite !
 Pour le checker : https://kim-eventbrite.herokuapp.com/
 
 ## GETTING STARTED & INSTALLATION
