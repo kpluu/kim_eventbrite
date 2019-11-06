@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# EVENTBRITE PROJECT
+Ne rate plus d'événement THP grâce au site Eventbrite de THP !
+Pour le checker : https://kim-eventbrite.herokuapp.com/
 
-Things you may want to cover:
+## GETTING STARTED & INSTALLATION
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You know it!!!!
+- $ git clone
+- $ bundle install
+- $ rails db:create 
+- $ rails db:migrate
+- $ rails db:seed
