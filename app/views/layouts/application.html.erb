@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Eventbrite Project</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Eventbrite</title>
   </head>
 
   <header style="width:100%;">
@@ -23,10 +20,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <%= link_to "Home", root_path, class:"navbar-link" %></a><span class="sr-only">(current)</span>
+            <%= link_to "Home", root_path, class:"nav-link" %>
           </li>
           <li class="nav-item">
-            <%= link_to "Créer un event", new_event_path, class:"navbar-link" %>
+            <%= link_to "Créer un event", new_event_path, class:"nav-link" %>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -35,7 +32,6 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <%= link_to "S'inscrire", new_user_registration_path, class: "dropdown-item" %>
               <%= link_to "Se connecter", user_session_path, class: "dropdown-item" %>
-              <div class="dropdown-divider"></div>
             </div>
           </li>
         </ul>
